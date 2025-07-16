@@ -1,0 +1,5 @@
+add_subdirectory(interpreter)
+add_subdirectory(lexical_analyser)
+add_subdirectory(syntactic_analyser)
+add_subdirectory(semantic_analyser)
+add_subdirectory(utils)

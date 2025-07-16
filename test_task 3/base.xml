@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemConditioning>
+    <Status>off</Status>
+    <Blocks>
+        <Block id="0">true</Block>
+        <Block id="1">true</Block>
+        <Block id="2">true</Block>
+    </Blocks>
+    <Parameters>
+        <Temperature unit="°C">20</Temperature>
+        <Pressure unit="Pa">101325</Pressure>
+        <Humidity>50</Humidity>
+    </Parameters>
+</SystemConditioning>

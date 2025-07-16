@@ -1,0 +1,27 @@
+set(SOURCES
+    main.cpp
+    window.cpp
+    SystemsConditioning.cpp
+    ClimateWidget/TemperatureWidget.cpp 
+    ClimateWidget/ClimateParamsWidget.cpp
+    ClimateWidget/ArrowControlWidget.cpp
+
+)
+
+set(HEADERS
+    window.h
+    SystemsConditioning.h
+    ClimateWidget/TemperatureWidget.h   
+    ClimateWidget/PressureWidget.h
+    ClimateWidget/HumidityWidget.h
+    ClimateWidget/ClimateParamsWidget.h
+    ClimateWidget/ArrowControlWidget.h
+)
+
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+
+target_include_directories(${PROJECT_NAME} PUBLIC
+    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_SOURCE_DIR}/bin
+    ${PROJECT_SOURCE_DIR}/bin/ClimateWidget
+)

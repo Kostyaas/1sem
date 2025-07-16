@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.19)
+project(Test_tasks)
+
+# Путь теперь будет передаваться из командной строки
+find_package(Qt5 REQUIRED COMPONENTS Core Gui Widgets)
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+
+add_subdirectory(bin)
+include_directories(include)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    Qt5::Core
+    Qt5::Gui
+    Qt5::Widgets
+)
